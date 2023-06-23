@@ -1,35 +1,19 @@
 <?php
-function test()
-{
-    // Tambah data ke database
-    // global $conn;
-    // $nama = htmlspecialchars($data["nama"]);
-    // $nis = htmlspecialchars($data["nis"]);
-    // $rombel = htmlspecialchars($data["rombel"]); 
-    // $rayon = htmlspecialchars($data["rayon"]);
-    // $status = htmlspecialchars($data["status"]);
-    // $query = "INSERT INTO students
-    //         VALUES
-    //         ('',  '$nama', '$nis', '$rombel', '$rayon', '$status', '$gambar')  
-    //     ";
-    // mysqli_query($conn, $query);
-
-    // return mysqli_affected_rows($conn);
+function test(){
     return 1;
 }
 
 if (isset($_POST["submit"])) {
-
     if (test($_POST) > 0) {
         echo "<script>
-                        alert('data berhasil ditambahkan!');
-                        document.location.href = 'index.php';
-                    </script>";
+                alert('data berhasil ditambahkan!');
+                document.location.href = 'index.php';
+            </script>";
     } else {
         echo "<script>
-                        alert('data gagal ditambahkan!');
-                        document.location.href = 'index.php';
-                    </script> ";
+                alert('data gagal ditambahkan!');
+                document.location.href = 'index.php';
+            </script> ";
     }
 }
 ?>
